@@ -1,4 +1,25 @@
+li {
+  display: inline;
+}
 .logo {
   width: 50px;
+  display: inline-block;
+}
+
+.profile-img {
+  display: inline-block;
+  width: 15px;
+  border-radius: 15px;
+}
+.nav-upload {
+  display: inline-block;
+  float: left;
+}
+
+.search {
+  display: inline;
+}
+
+.top-right {
   display: inline-block;
 }
