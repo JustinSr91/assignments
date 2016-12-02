@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 article {
   background-color: white;
 }
@@ -19,7 +23,8 @@ main {
 
 nav {
   background-color: white;
-  vertical-align: top;
+  padding: 9px 20px;
+  height: 40px;
 }
 
 section {
@@ -33,7 +38,7 @@ section {
 .logo {
   width: 59px;
   display:inline-block;
-  margin-left: 40px;
+  margin-top: -9px;
 }
 
 .profile-img {
@@ -45,7 +50,6 @@ section {
 .upload-button {
   display: inline-block;
   background-color: silver;
-  float: right;
 }
 
 .search {
@@ -65,10 +69,9 @@ section {
 
 .user__group__top {
   float: right;
-  display: inline-block;
-
 }
 
+/* Video Views text */
 .views {
   color: grey;
 }
