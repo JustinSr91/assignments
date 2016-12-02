@@ -1,25 +1,50 @@
-li {
-  display: inline;
+body{
+  background-color: silver;
 }
-.logo {
-  width: 50px;
+
+nav {
   display: inline-block;
 }
 
-.profile-img {
+li {
+  display: block;
+}
+.cat {
+  width:30px;
+}
+
+.logo {
+  width: 50px;
+  display: block;
+}
+.li-logo {
   display: inline-block;
+}
+.li-search {
+  display: inline-block;
+  border-width: thin;
+}
+
+.profile-img {
+  display: inline;
   width: 15px;
   border-radius: 15px;
 }
 .nav-upload {
-  display: inline-block;
-  float: left;
+  display: inline;
+
 }
 
 .search {
   display: inline;
 }
-
+.subscribe {
+  background-color:red;
+  color: white;
+}
 .top-right {
   display: inline-block;
+}
+.views {
+  color: grey;
 }
