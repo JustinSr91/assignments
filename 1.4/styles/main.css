@@ -1,29 +1,27 @@
 article {
   background-color: white;
 }
+
 aside {
   background-color: white;
   display: inline-block;
   float: right;
-
 }
 
 body{
   background-color: silver;
   margin: 0;
-
 }
+
 main {
   width: 678px;
 }
+
 nav {
   background-color: white;
-  box-sizing: border-box;
+  vertical-align: top;
 }
 
-li {
-  display: inline-block;
-}
 section {
   background-color: white;
 }
@@ -33,8 +31,9 @@ section {
 }
 
 .logo {
-  width: 50px;
+  width: 59px;
   display:inline-block;
+  margin-left: 40px;
 }
 
 .profile-img {
@@ -43,26 +42,31 @@ section {
   border-radius: 15px;
 }
 
-}
 .upload-button {
   display: inline-block;
   background-color: silver;
+  float: right;
 }
+
 .search {
   display: inline-block;
-  width: 465px;
+  width: 512px;
+  vertical-align: top;
 }
+
 .subscribe {
   background-color:red;
   color: white;
 }
+
 .top-right {
   display: inline-block;
 }
+
 .user__group__top {
   float: right;
   display: inline-block;
-  vertical-align: top;
+
 }
 
 .views {
