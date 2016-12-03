@@ -13,18 +13,13 @@ aside {
 }
 
 body{
-  background-color: silver;
+  background-color: rgb(241, 241, 241);
   margin: 0;
 }
 
 main {
   width: 678px;
-}
-
-nav {
-  background-color: white;
-  padding: 9px 20px;
-  height: 40px;
+  background-color: rgb(241, 241, 241);
 }
 
 section {
@@ -36,9 +31,15 @@ section {
 }
 
 .logo {
-  width: 59px;
+  width: 60px;
   display:inline-block;
   margin-top: -9px;
+}
+
+.nav {
+  background-color: white;
+  padding: 9px 20px;
+  height: 40px;
 }
 
 .profile-img {
@@ -52,10 +53,28 @@ section {
   background-color: silver;
 }
 
-.search {
+.search__form {
   display: inline-block;
-  width: 512px;
   vertical-align: top;
+  margin-left: 85px;
+}
+/* Nav search bar */
+.search__text,
+.search__submit {
+  height: 21px
+  display:inline;
+}
+
+.search__text {
+  width: 460px;
+}
+
+.search__submit {
+  width: 52px;
+  padding: 3px;
+  border: 5px;
+  background-color: rgb(249,249,249);
+  border-color: rgb(225, 225, 225);
 }
 
 .subscribe {
