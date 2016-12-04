@@ -10,24 +10,30 @@ aside {
   background-color: white;
   display: inline-block;
   float: right;
+  margin-left: 5px;
 }
 
 body{
   background-color: rgb(241, 241, 241);
   margin: 0;
+  display: inline-block;
 }
 
 main {
-  width: 678px;
+  width: 500px;
   background-color: rgb(241, 241, 241);
   display: inline-block;
   height: 300px;
 
 }
 
+.button__show__more {
+  width: 100%;
+}
+
 .movie__section {
   background-color: white;
-  width
+  width: 500px;
 }
 
 .cat {
@@ -55,6 +61,7 @@ main {
   display: inline-block;
   width: 19px;
   border-radius: 19px;
+  vertical-align: top;
 }
 
 .upload-button {
@@ -66,6 +73,7 @@ main {
   display: inline-block;
   vertical-align: top;
   margin-left: 85px;
+  border-color: black;
 }
 /* Nav search bar */
 .search__text,
@@ -97,6 +105,7 @@ main {
 
 .user__group__top {
   float: right;
+  display: inline-block;
 }
 
 .user__name {
