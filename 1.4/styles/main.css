@@ -20,14 +20,23 @@ body{
 main {
   width: 678px;
   background-color: rgb(241, 241, 241);
+  display: inline-block;
+  height: 300px;
+
 }
 
-section {
+.movie__section {
   background-color: white;
+  width
 }
 
 .cat {
   width:30px;
+}
+
+.h1__movie {
+  height: 20px;
+  display: inline-block;
 }
 
 .logo {
@@ -44,8 +53,8 @@ section {
 
 .profile-img {
   display: inline-block;
-  width: 15px;
-  border-radius: 15px;
+  width: 19px;
+  border-radius: 19px;
 }
 
 .upload-button {
@@ -61,8 +70,8 @@ section {
 /* Nav search bar */
 .search__text,
 .search__submit {
-  height: 21px
-  display:inline;
+  height: 21px;
+  display:inline-block;
 }
 
 .search__text {
@@ -90,7 +99,15 @@ section {
   float: right;
 }
 
+.user__name {
+
+}
+
 /* Video Views text */
 .views {
   color: grey;
+}
+
+.video__img {
+  display: inline-block;
 }
