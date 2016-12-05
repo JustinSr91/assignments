@@ -11,6 +11,7 @@ aside {
   display: inline-block;
   float: right;
   margin-left: 5px;
+  width: 328px;
 }
 
 body{
@@ -19,7 +20,7 @@ body{
 }
 
 main {
-  width: 66%;
+  width: 678px;
   background-color: rgb(241, 241, 241);
 }
 
@@ -105,16 +106,18 @@ main {
 }
 
 .video__movie__title {
-  height: 20px;
   display: inline-block;
+  height: 20px;
   margin-top: 0;
   margin-bottom: 12px;
 }
 
 .video__section {
   background-color: white;
-  width: 500px;
+  height: 121px;
+  margin: 0;
   padding: 30px;
+  width: 678px;
 }
 
 .video__subscribe {
@@ -129,12 +132,14 @@ main {
 
 .video__video__img {
   display: inline-block;
+  height: 385px;
+  width: 678px;
 }
 
 /* Video Views text */
 .video__views__count {
   color: grey;
-  float:right;
   display: inline-block;
+  float:right;
   margin-top: 0;
 }
