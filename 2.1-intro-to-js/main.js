@@ -65,3 +65,24 @@ var instructorName= "Jason Vanderslice"
 // Final Statement
 var statement = yourName + " is taking a class at The Iron Yard, my instructor's name is " + instructorName;
 console.log(yourName + " is taking a class at The Iron Yard, my instructor's name is " + instructorName);
+
+
+// Today at The Iron Yard we learned about the language Javascript and various Javascript syntaxes such as Object and Array.
+
+// Javascript is a language that provides object oriented programming to web pages and browsers.
+// It can be used to control and manipulate web pages on both server-side and client-side. The main uses of Javascript are to text changes on the web page, text box creation, pop up messages, and user interaction.
+
+// An object is a variable that refers to a collection of properties and types which defines the variables’ characteristics. It allows for the addition of certain details of a set variable.
+
+// An Array is used to store multiple values in a single variable. It is identified by braces [ ] .
+// Elements in an array are numbered starting at 0. The second element would then be numbered at 1.
+
+// Resources:
+
+// http://study.com/academy/lesson/what-is-javascript-function-uses-quiz.html
+
+// http://www.w3schools.com/js/js_object_definition.asp
+
+// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Working_with_Objects
+
+// http://www.w3schools.com/jsref/jsref_obj_array.asp
