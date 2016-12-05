@@ -12,11 +12,11 @@
   </head>
 
   <body>
-      <nav class="nav"/>
+      <nav class="nav__bar"/>
           <a href="#">
           <img src="assets/YouTube.png"
-          alt="YouTube logo"
-          class="logo"/>
+          alt="logo__youtube"
+          class="logo__youtube"/>
           </a>
 
           <form class="search__form"
@@ -29,20 +29,20 @@
           </form>
 
           <div class="user__group__top">
-            <button class="upload-button">
+            <button class="button__upload">
                 Upload
             </button>
             <a href="#">
             <img
              src="assets/user-corner.jpg"
              alt="Profile Image"
-             class="profile-img">
+             class="img__profile">
             </a>
           </div>
       </nav>
 
       <main>
-            <img class="video__video__img"
+            <img class="img__video"
                 src="assets/movie.png"
                 alt="movie image">
         <section class="video__section">
@@ -55,6 +55,7 @@
                       alt="upload profile image"
                       class="video__cat__photo"/>
                   </a>
+                <!-- I do not understand how to get username to sit on top of subscribe button -->
                 <div class="video__usename__aside">
                    <a href="#">
                       Freestyler 365
@@ -62,15 +63,69 @@
                    <a href="#">
                      <button class="video__subscribe">
                       Subscribe
-                     </button>
+                    </button>
                      <h2 class="video__views__count">
                       364,420 views
                      </h2>
-                </div>
+                 </div>
+                </article>
             </div>
          </section>
        </main>
+          <!-- Had trouble getting aside section to the top right of page after floating-right -->
+          <aside>
+              <h2>
+                Up next
+              </h2>
+            <p> <!-- First video -->
+              <img src="assets/suggestion-1.jpg"
+                   alt="The.Matrix-1999">
+              <h3>
+                The.Matrix-1999 (welcome to the real world)
+              </h3>
+            <p>
+              dimopan
+            <p>
+              463,371 views
+            </p>
 
-      
+            <p> <!-- Second video -->
+              <img src="assets/suggestion-2.jpg"
+                   alt="The Matrix Construct">
+              <h3>
+                "The Matrix" (1999) -- 'Construct' Scenes
+              </h3>
+             <p>
+                Galactic Archive
+             <p>
+                708,357 views
+            </p>
+
+            <p> <!-- Third video -->
+              <img src="assets/suggestion-3.jpg"
+                   alt="Morpheus">
+              <h3>
+                Morpheus explains what is the matrix
+              </h3>
+            <p>
+                Jason Newsted
+            <p>
+                584,308 views
+            </p>
+
+            <p> <!-- Fourth video -->
+              <img src="assets/suggestion-4.jpg"
+                   alt="Neo">
+              <h3>
+                Film Theory: Neo ISN'T The One in The Matrix Trilogy
+              </h3>
+            <p>
+                The Film Theorists
+            <p>
+                4,992,777 views
+            </p>
+
+        </aside>
+
   </body>
 </html>
