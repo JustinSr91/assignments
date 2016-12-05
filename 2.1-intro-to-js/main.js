@@ -35,7 +35,7 @@ var math = high - low;
 
 math = high - "5";
 // Q: What is `math` set to?
-// A:
+// A: 45
 
 
 /* =========================================================
@@ -49,15 +49,14 @@ var born = 1983;
 var today = 2015;
 
 // Answers Below:
+
 var timCurrentAge = today - born;
-console.log(timCurrentAge);
-
-
+console.log("Tim is " + timCurrentAge + " years old");
 
 
 // Store some information following in variables.
-var yourName;
-var instructorName;
+var yourName= "Justin Strayhorn"
+var instructorName= "Jason Vanderslice"
 
 // Update the variables above so the expression reads correctly.
 // Answers Below:
@@ -65,3 +64,4 @@ var instructorName;
 
 // Final Statement
 var statement = yourName + " is taking a class at The Iron Yard, my instructor's name is " + instructorName;
+console.log(yourName + " is taking a class at The Iron Yard, my instructor's name is " + instructorName);
