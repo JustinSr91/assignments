@@ -93,9 +93,19 @@ main {
   font-size: 9px;
 }
 
+.up__next__img__1 {
+  width: 40%;
+
+}
+
 .user__group__top {
   display: inline-block;
   float: right;
+}
+
+.username__freestyler {
+  display: block;
+  margin: 0;
 }
 
 .video__cat__photo {
@@ -106,11 +116,8 @@ main {
 }
 
 .video__movie__title {
-  display: inline-block;
   font-size: medium;
-  height: 20px;
-  margin-top: 0;
-  margin-bottom: 6px;
+  margin: 0;
 }
 
 .video__section {
@@ -118,7 +125,6 @@ main {
   display: inline-block;
   height: 121px;
   margin: 0;
-  padding: 30px;
   padding-left: 0;
   padding-right: 0;
   width: 678px;
@@ -130,9 +136,10 @@ main {
 }
 
 .video__username__aside {
-  display: block;
+  display: inline-block;;
   margin: 0;
   font-size: small;
+  width: 600px;
 }
 
 /* Video Views text */
