@@ -65,4 +65,3 @@ var instructorName;
 
 // Final Statement
 var statement = yourName + " is taking a class at The Iron Yard, my instructor's name is " + instructorName;
-Submit the assignment with the main link pointing to your repo containing the main.js
