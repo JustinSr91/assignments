@@ -2,14 +2,13 @@
   box-sizing: border-box;
 }
 
-
-
 .aside__up__next {
   background-color: white;
   display: inline-block;
   float: right;
   margin-left: 5px;
-  width: 328px;
+  margin-top: 8px;
+  width: 330px;
 }
 
 .full__body{
@@ -21,6 +20,7 @@ main {
   background-color: rgb(241, 241, 241);
   margin-left: 125px;
   width: 678px;
+  display: inline-block;
 }
 
 .cat__hat__section {
