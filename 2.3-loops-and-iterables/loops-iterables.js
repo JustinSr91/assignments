@@ -38,7 +38,25 @@ console.assert(nicer("here son, your crappy sandwich is on the dang plate.") ===
 
 // PART 2: write a function called capitalizeAll(). It should take as input a sentence and capitalize the first letter of every word in the sentence.
 
+// Define function called capitalize all
+// convert string into an array
+// for loop to indentify the first character in each word
+// capitalize the first letter
+// return array to string
+// return output
+function capitalizeAll(sentence) {
+  var sentenceArray = sentence.split (" ");
+  for(var i = 0, i < sentenceArray.length; i++){
+    var firstLetter = sentenceArray[i];
+    firstLetter = sentenceArray.toUpperCase();
+    console.log(firstLetter);
+  }
+
+}
+
 console.assert(capitalizeAll('every day is like sunday.') === 'Every Day Is Like Sunday.')
+
+
 
 // PART 3: write a function called properSentences(). It should take as input a string and capitalize the first letter of every sentence in that string. (For our purposes, all sentences will end with periods. Write one that works with ? and ! and receive a gratifying high five, right on the hand!)
 
