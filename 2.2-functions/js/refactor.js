@@ -5,13 +5,14 @@
 // function
 
 function doSomethingCool() {
+  // I do not understand how to convert function to variable other than attempt below.
   console.log("Something Cool!");
-  var a = "Something ";
-  var b = "Cool ";
 
 }
 
 // Put your answer below -------------------------
+var a = "Something ";
+var b = "Cool ";
 
 
 // -----------------------------------------------
@@ -32,7 +33,7 @@ function sayHi() {
 setTimeout(sayHi, 2000);
 
 // Put your answer below -------------------------
-
+// I do not understand this question
 
 // -----------------------------------------------
 
@@ -62,7 +63,7 @@ letter = "z";
 console.log("The letter is", letter);
 
 // Put your answer below -------------------------
-
+// I am completely lost on this question.
 
 // -----------------------------------------------
 
@@ -84,7 +85,7 @@ var reverseStr = function(str) {
 };
 
 // Put your answer below -------------------------
-
+// I do not know.
 
 // -----------------------------------------------
 
@@ -115,7 +116,7 @@ var spanishColor = function(colorName) {
 };
 
 // Put your answer below -------------------------
-
+// I do not know.
 
 // -----------------------------------------------
 
@@ -132,8 +133,8 @@ var spanishColor = function(colorName) {
 var foo = "bar";
 
 // Put your answer below -------------------------
-
-
+var
+foo = bar
 // -----------------------------------------------
 
 //////////////////////////////////////////////////
@@ -154,7 +155,7 @@ var callTenTimes = function(callback) {
 };
 
 // Put your answer below -------------------------
-
+// I do not know.
 
 // -----------------------------------------------
 
@@ -182,7 +183,7 @@ var decreaseScore = function() {
 };
 
 // Put your answer below -------------------------
-
+// I do not know how to refactor this.
 
 // -----------------------------------------------
 
@@ -202,7 +203,7 @@ var addNumbers = function(numberA, numberB) {
 var twoPlusTwo = addNumbers(2,2);
 
 // Put your answer below -------------------------
-
+// I am not sure.
 
 // -----------------------------------------------
 
@@ -228,7 +229,7 @@ var accelerate = function(amount) {
 };
 
 // Put your answer below -------------------------
-
+// I am not sure 
 
 // -----------------------------------------------
 
