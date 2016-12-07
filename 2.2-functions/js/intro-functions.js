@@ -89,7 +89,7 @@ console.assert(isVowel("E") === true);
 
 function rovarspraket(text){
   textAsString = text.toString();
-// having trouble understanding the purpose of textAsString.split in this line of code
+// having trouble understanding the purpose of textAsString.split in this line of code.
   var textArray = textAsString.split("");
   for(var i = 0; i < textArray.length; i++) {
     var currentLetter = textArray[i];
@@ -115,9 +115,9 @@ console.assert(rovarspraket(0) === "0")
  */
 
 function reverse(str){
+  // Referenced https://www.youtube.com/watch?v=gPAtcWuM8AM for insight on how to properly solve a reverse of string. This makes sense to me for the most part. Would like to have better understanding of .split
     var array = str.split("");{
       array.reverse("");
-
     }
 }
 
@@ -134,7 +134,14 @@ console.assert(reverse("we don't want no trouble") === "elbuort on tnaw t'nod ew
  */
 
 function findLongestWord(sentence){
-    // YOUR CODE HERE
+  // cannot find answer to this problem, nor do I fully understand how to set up the function. Referenced https://www.youtube.com/watch?v=LeD27i9G9s0; kept getting Unexpected end of input error in console.
+  var words = str.split(" ");
+  var longest = 0;
+  for (var i = 0; i < words.length; i++) {
+      if (words[i].length > longest) {
+        longest = words[i].length;
+      }
+   }
 }
 
 console.assert(findLongestWord("book dogs") === "book")
