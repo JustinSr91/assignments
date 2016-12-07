@@ -37,11 +37,10 @@ function maxOfThree(a, b, c){
         return a;
     }
     else if (b > c && b > a){
-         return b;
+        return b;
     }
       else
         return c;
-
 }
 console.assert(maxOfThree(1,3,2) === 3);
 console.assert(maxOfThree(0,3,-1) === 3);
@@ -89,8 +88,16 @@ console.assert(isVowel("E") === true);
  */
 
 function rovarspraket(text){
-    // YOUR CODE HERE
-}
+  textAsString = text.toString();
+// having trouble understanding the purpose of textAsString.split in this line of code
+  var textArray = textAsString.split("");
+  for(var i = 0; i < textArray.length; i++) {
+    var currentLetter = textArray[i];
+    if(!isvowel(currentLetter)){
+      var doubledText = currentLetter + "o" + currentLetter;
+      textArray.splice(i, 1, doubledText);
+    }
+  }
 
 console.assert(rovarspraket("a") === "a")
 console.assert(rovarspraket("b") === "bob")
@@ -108,7 +115,10 @@ console.assert(rovarspraket(0) === "0")
  */
 
 function reverse(str){
-    // YOUR CODE HERE
+    var array = str.split("");{
+      array.reverse("");
+
+    }
 }
 
 console.assert(reverse("books") === "skoob")
