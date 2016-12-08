@@ -1,0 +1,29 @@
+.button__clear {
+  width: 70px;
+  height: 70px;
+}
+
+.output__window {
+  width: 210px;
+  height: 38px;
+}
+
+.row__1 {
+  display: flex;
+}
+
+.row__2 {
+  display: block;
+}
+
+.row__3 {
+  display: block;
+}
+
+.row__4 {
+  display: block;
+}
+
+.row__5 {
+display: block;
+}
