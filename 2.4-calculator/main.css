@@ -1,29 +1,45 @@
 .button__clear {
   width: 70px;
   height: 70px;
+  background-color: gold;
+  font-size: 16px;
+}
+
+.key__grp {
+width: 70px;
+height: 70px;
+background-color: rgb(100, 181, 92);
+font-size: 16px;
 }
 
 .output__window {
-  width: 210px;
-  height: 38px;
+  width: 215px;
+  height: 65px;
+  border-style: solid;
+  margin: 0;
 }
 
 .row__1 {
   display: flex;
+  background-color: dodgerblue;
 }
 
 .row__2 {
   display: block;
+  background-color: dodgerblue;
 }
 
 .row__3 {
   display: block;
+  background-color: dodgerblue;
 }
 
 .row__4 {
   display: block;
+  background-color: dodgerblue;
 }
 
 .row__5 {
 display: block;
+background-color: dodgerblue;
 }
