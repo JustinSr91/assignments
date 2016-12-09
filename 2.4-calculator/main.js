@@ -3,7 +3,7 @@
 
 document.addEventListener("DOMContentLoaded", function(){
 
-  var numberKeyElement = document.querySelectorAll("[data-js='numberKey']")
-  
+  var numberKeyElement = document.querySelectorAll("[data-js='numberKey']");
+  var outputName = document.querySelector("[data-js='output__Window']");
 
 )}
