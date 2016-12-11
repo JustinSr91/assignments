@@ -4,8 +4,8 @@
 document.addEventListener("DOMContentLoaded", function(){
 
 // CREATING VARIABLES FOR ALL CALCULATOR NUMBER KEY ELEMENTS/CLASSES IN HTML.
-// QUERY SELECTOR PULLS ELEMENTS OVER FROM HTML AND INSERTS INTO FUNCTION.
-// WILL EVENTUALLY TRY QUERY SELECTOR 'ALL' AND CREATE FOR LOOP FOR NUMBER KEYS.
+// QUERY SELECTOR PULLS ELEMENTS OVER FROM HTML AND INSERTS INTO JS FUNCTION.
+// WILL EVENTUALLY TRY QUERY SELECTOR 'ALL' AND CREATE FOR-LOOP FOR NUMBER KEYS.
 
   var numberKeyElementEqual = document.querySelector("[data-js='numberKeyEqual']");
   var outputKeyElement = document.querySelector("[data-js='numberKeyEqual']");
@@ -49,16 +49,66 @@ document.addEventListener("DOMContentLoaded", function(){
   numberKeyElement4.addEventListener("click", function(){
     outputKeyElement.textContent += 4;
   });
-  // var numberKeyElement5 = document.querySelector("[data-js='numberKey5']");
-  // var numberKeyElement6 = document.querySelector("[data-js='numberKey6']");
-  // var numberKeyElementX = document.querySelector("[data-js='numberKeyX']");
-  // var numberKeyElement1 = document.querySelector("[data-js='numberKey1']");
-  // var numberKeyElement2 = document.querySelector("[data-js='numberKey2']");
-  // var numberKeyElement3 = document.querySelector("[data-js='numberKey3']");
-  // var numberKeyElementMinus = document.querySelector("[data-js='numberKeyMinus']");
-  // var numberKeyElement0 = document.querySelector("[data-js='numberKey0']");
-  // var numberKeyElementDecimal = document.querySelector("[data-js='numberKeyDecimal']");
-  // var numberKeyElementPlus = document.querySelector("[data-js='numberKeyPlus']");
+
+  var numberKeyElement5 = document.querySelector("[data-js='numberKey5']");
+  var outputKeyElement = document.querySelector("[data-js='output__Window']");
+  numberKeyElement5.addEventListener("click", function(){
+    outputKeyElement.textContent += 5;
+  });
+
+  var numberKeyElement6 = document.querySelector("[data-js='numberKey6']");
+  var outputKeyElement = document.querySelector("[data-js='output__Window']");
+  numberKeyElement6.addEventListener("click", function(){
+    outputKeyElement.textContent += 6;
+  });
+
+  var numberKeyElementX = document.querySelector("[data-js='numberKeyX']");
+  var outputKeyElement = document.querySelector("[data-js='output__Window']");
+  numberKeyElementX.addEventListener("click", function(){
+    outputKeyElement.textContent += "*";
+  });
+
+  var numberKeyElement1 = document.querySelector("[data-js='numberKey1']");
+  var outputKeyElement = document.querySelector("[data-js='output__Window']");
+  numberKeyElement1.addEventListener("click", function(){
+    outputKeyElement.textContent += 1;
+  });
+
+  var numberKeyElement2 = document.querySelector("[data-js='numberKey2']");
+  var outputKeyElement = document.querySelector("[data-js='output__Window']");
+  numberKeyElement2.addEventListener("click", function(){
+    outputKeyElement.textContent += 2;
+  });
+
+  var numberKeyElement3 = document.querySelector("[data-js='numberKey3']");
+  var outputKeyElement = document.querySelector("[data-js='output__Window']");
+  numberKeyElement3.addEventListener("click", function(){
+    outputKeyElement.textContent += 3;
+  });
+
+  var numberKeyElementMinus = document.querySelector("[data-js='numberKeyMinus']");
+  var outputKeyElement = document.querySelector("[data-js='output__Window']");
+  numberKeyElementMinus.addEventListener("click", function(){
+    outputKeyElement.textContent += "-";
+  });
+
+  var numberKeyElement0 = document.querySelector("[data-js='numberKey0']");
+  var outputKeyElement = document.querySelector("[data-js='output__Window']");
+  numberKeyElement0.addEventListener("click", function(){
+    outputKeyElement.textContent += 0;
+  });
+
+  var numberKeyElementDecimal = document.querySelector("[data-js='numberKeyDecimal']");
+  var outputKeyElement = document.querySelector("[data-js='output__Window']");
+  numberKeyElementDecimal.addEventListener("click", function(){
+    outputKeyElement.textContent += ".";
+  });
+
+  var numberKeyElementPlus = document.querySelector("[data-js='numberKeyPlus']");
+  var outputKeyElement = document.querySelector("[data-js='output__Window']");
+  numberKeyElementPlus.addEventListener("click", function(){
+    outputKeyElement.textContent += "+";
+  });
 
 // HERE IS THE VARIABLE FOR THE OUTPUT WINDOW.
 
