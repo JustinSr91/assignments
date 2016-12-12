@@ -18,10 +18,7 @@ document.addEventListener("DOMContentLoaded", function(){
 
   var xhrData = this.response;
 
-  var JSONData = JSON.parse(xhrData);
-
-  var searchArray = JSONData.Search;
-  searchArray.forEach(function(movieData){
+  var movieData = JSON.parse(xhrData);
 
     var movieArticleHTML = "<article>";
           movieArticleHTML += "<h2>";
@@ -31,10 +28,10 @@ document.addEventListener("DOMContentLoaded", function(){
             movieArticleHTML += movieData.Poster;
           movieArticleHTML += "'/>";
         movieArticleHTML += "</article";
-    moviesSectionElement.innerHTML += movieArticleHTML;
+        moviesSectionElement.innerHTML += movieArticleHTML;
 
     console.log(movieArticleHTML);
-    });
+
   });
 
 xhr.send();
