@@ -27,10 +27,18 @@ document.addEventListener("DOMContentLoaded", function(){
           movieArticleHTML += "<img src='";
             movieArticleHTML += movieData.Poster;
           movieArticleHTML += "'/>";
+          movieArticleHTML += "<p>"
+            movieArticleHTML += "Release Date: "
+            movieArticleHTML += movieData.Released;
+          movieArticleHTML += "</p>"
+          movieArticleHTML += "<p>"
+            movieArticleHTML += "Runtime: "
+            movieArticleHTML += movieData.Runtime;
+          movieArticleHTML += "</p>"
+          movieArticleHTML += movieData.Director;
         movieArticleHTML += "</article";
         moviesSectionElement.innerHTML += movieArticleHTML;
 
-    console.log(movieArticleHTML);
 
   });
 
