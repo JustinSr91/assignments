@@ -25,28 +25,29 @@ document.addEventListener("DOMContentLoaded", function(){
             movieArticleHTML += "movie__title'>";
             movieArticleHTML += movieData.Title;
           movieArticleHTML += "</h2>";
-          movieArticleHTML += "<img src='";
-            movieArticleHTML += movieData.Poster;
-          movieArticleHTML += "'/>";
-          movieArticleHTML += "<p class= ' ";
+          movieArticleHTML += `<img class="movie__poster" src='${movieData.Poster}'/>`;
+          movieArticleHTML += "<p class='";
             movieArticleHTML += "movie__release__date'>";
             movieArticleHTML += "Release Date: ";
             movieArticleHTML += movieData.Released;
-          movieArticleHTML += "</p>"
+          movieArticleHTML += "</p>";
           movieArticleHTML += "<p class=' ";
             movieArticleHTML += "movie__runtime'>";
             movieArticleHTML += "Runtime: ";
             movieArticleHTML += movieData.Runtime;
           movieArticleHTML += "</p>"
-          movieArticleHTML += "<p>"
+          movieArticleHTML += "<p class=' ";
+            movieArticleHTML += "movie__director'>";
             movieArticleHTML += "Director: ";
             movieArticleHTML += movieData.Director;
           movieArticleHTML += "</p>";
-          movieArticleHTML += "<p>";
+          movieArticleHTML += "<p class=' ";
+            movieArticleHTML += "movie__cast'>";
             movieArticleHTML += "Cast: ";
             movieArticleHTML += movieData.Actors;
           movieArticleHTML += "</p>";
-          movieArticleHTML += "<p>";
+          movieArticleHTML += "<p class=' ";
+            movieArticleHTML += "movie__plot'>";
             movieArticleHTML += "Plot: ";
             movieArticleHTML += movieData.Plot;
           movieArticleHTML += "</p>";
