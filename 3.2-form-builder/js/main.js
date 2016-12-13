@@ -2,7 +2,7 @@
 document.addEventListener("DOMContentLoaded", function(){
 
 // Linking my JS to HTML document...
-  var formElementArray = document.querySelector("[data-js='form']");
+  var bodyElement = document.querySelector("[data-js='bodyElement']");
 
 // Creating var (instance) to request Form information...
   var xhr = new XMLHttpRequest();
@@ -17,13 +17,26 @@ document.addEventListener("DOMContentLoaded", function(){
 
 // Now I will parse JSON data...
   var JSONData = JSON.parse(xhrData);
-  for (var i = 0; i < JSONData.length; i++){
-    var dataArray = JSONData[i];
-    console.log(dataArray);
 
-  }
+  // This is a placeholder for loop item data...
+  var formHTML ="";
+
+  JSONData.forEach(function(inputData){
+
+    var placeholderString = "";
+    
+    if (inputData.type === "text"){
+      placeholderString += `<label> ${inputData.label} </label>`;
+      placeholderString += `<input id="${inputData.id}" type="${inputData.type}"/>`;
+    }
+
+
+
+    formHTML += placeholderString
+
+    })
+  bodyElement.innerHTML += formHTML
 
   });
-
   xhr.send();
 })
