@@ -1,0 +1,18 @@
+.body {
+  background-color: antiquewhite;
+}
+
+.movie__release__date{
+  text-align: center;
+}
+
+.movie__runtime{
+  text-align: center;
+}
+
+.movie__section {
+  background-color: white;
+}
+
+.movie__title {
+  text-align: center;
