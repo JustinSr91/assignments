@@ -19,23 +19,30 @@ document.addEventListener("DOMContentLoaded", function(){
   var JSONData = JSON.parse(xhrData);
 
   // This is a placeholder for loop item data...
-  var formHTML ="";
+  var formDataHTML ="";
 
   JSONData.forEach(function(inputData){
 
-    var placeholderString = "";
-    
-    if (inputData.type === "text"){
-      placeholderString += `<label> ${inputData.label} </label>`;
-      placeholderString += `<input id="${inputData.id}" type="${inputData.type}"/>`;
+    var inputPlaceholderString = "";
+
+    if (inputData.type === "select"){
+      inputPlaceholderString += `<select>`;
+        inputData.select.forEach(function(selectData){
+
+          inputPlaceholderString += `<select label="${selectData.label}" value= "${selectData.value}"</select>`;
+        })
+
+    }else {
+      inputPlaceholderString += `<label> ${inputData.label} </label>`;
+      inputPlaceholderString += `<input id="${inputData.id}" type="${inputData.type}"
+      id="${inputData.id}" icon="${inputData.icon}">`;
+
     }
 
-
-
-    formHTML += placeholderString
+    formDataHTML += inputPlaceholderString;
 
     })
-  bodyElement.innerHTML += formHTML
+  bodyElement.innerHTML += formDataHTML
 
   });
   xhr.send();
