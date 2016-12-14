@@ -1,8 +1,23 @@
+.image__AnthonyDavis{
+  height: 25%;
+  width: 20%;
+}
+
+.image__Dwight{
+  height: 25%;
+  width: 25%;
+}
+
+.NBA__players{
+  display: inline-flex;
+}
+
 .positionList__position{
   overflow: hidden;
   height: 20px;
 }
 
 .paragraph__expand{
-  height: 100px;
+  height: 200px;
+  transition: 1s;
 }
