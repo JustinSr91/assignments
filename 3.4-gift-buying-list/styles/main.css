@@ -3,7 +3,9 @@
 }
 
 .item__form{
-
+  margin: 0 auto;
+  height: 98px;
+  width: 687px;
 }
 
 .main__h1{
@@ -11,8 +13,17 @@ font-family: helvetica;
 font-size: 48px;
 font-weight: lighter;
 text-align: center;
+width: 100%;
 }
 
 .main{
+  background-color: rgb(245,245,245);
+  height: 600px;
+  margin-left: 200px;
+  width: 922px;
+}
 
+.text__area{
+  height: 98px;
+  width: 687px;
 }
