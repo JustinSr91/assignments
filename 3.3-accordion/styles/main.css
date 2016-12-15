@@ -8,8 +8,14 @@
   width: 25%;
 }
 
+.image__LeBron{
+  height: 25%;
+  width: 25%;
+}
+
 .NBA__players{
   display: inline-flex;
+  text-align: center;
 }
 
 .positionList__position{
@@ -18,6 +24,6 @@
 }
 
 .paragraph__expand{
-  height: 200px;
+  height: 300px;
   transition: 1s;
 }
