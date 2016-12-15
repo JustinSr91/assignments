@@ -2,9 +2,11 @@
   box-sizing: border-box;
 }
 
-.h1{
+.main__h1{
+font-family: helvetica;
+font-size: 48px;
+font-weight: lighter;
 text-align: center;
-font-size: 24px;
 }
 
 .main{
