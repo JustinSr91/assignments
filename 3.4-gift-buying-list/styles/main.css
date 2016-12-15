@@ -2,6 +2,15 @@
   box-sizing: border-box;
 }
 
+.check__button{
+  background-color: white;
+  border-color: rgb(238, 238, 238);
+  border-radius: 50px;
+  border-style: double;
+  height: 50px;
+  width: 50px;
+
+}
 .form__add__button{
   background-color: rgb(125, 196, 118);
   color: white;
@@ -20,6 +29,11 @@
   width: 687px;
 }
 
+.item__article{
+  margin-right: 117px;
+  height: 89px;
+}
+
 .item__form{
   margin: 0 auto;
   height: 98px;
@@ -27,6 +41,9 @@
   display: flex;
 }
 
+.item__section{
+  margin-left: 119px;
+}
 .main__h1{
 font-family: helvetica;
 font-size: 48px;
