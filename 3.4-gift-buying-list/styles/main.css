@@ -2,6 +2,7 @@
   box-sizing: border-box;
 }
 
+/* Checklist button. Once checked, item line-through takes place */
 .check__button{
   background-color: white;
   border-color: rgb(238, 238, 238);
@@ -11,8 +12,9 @@
   vertical-align: middle;
   width: 50px;
   margin-top: 10px;
-
 }
+
+/* The "add" button */
 .form__addButton{
   background-color: rgb(125, 196, 118);
   color: white;
@@ -22,19 +24,13 @@
   -webkit-appearance:initial;
   -moz-appearance: initial;
   width: 139px;
-
 }
 
+/* This is where added item shows in list */
 .h2__item{
   display: inline-block;
   vertical-align: middle;
   margin-top: 30px;
-}
-
-.item__textArea{
-  font-size: 32px;
-  height: 98px;
-  width: 687px;
 }
 
 .item__article1{
@@ -57,10 +53,20 @@
   display: flex;
 }
 
+/* Container where list of items show up */
 .item__section{
   margin-left: 119px;
   height: auto;
 }
+
+/* Here is the text field where item name is entered */
+.item__textArea{
+  font-size: 32px;
+  height: 98px;
+  width: 687px;
+}
+
+/* Page heading */
 .main__h1{
 font-family: helvetica;
 font-size: 48px;
@@ -69,6 +75,7 @@ text-align: center;
 width: 100%;
 }
 
+/* Main container */
 .main{
   background-color: rgb(245,245,245);
   height: 600px;
