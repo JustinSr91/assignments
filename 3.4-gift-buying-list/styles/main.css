@@ -8,10 +8,12 @@
   border-radius: 50px;
   border-style: double;
   height: 50px;
+  vertical-align: middle;
   width: 50px;
+  margin-top: 10px;
 
 }
-.form__add__button{
+.form__addButton{
   background-color: rgb(125, 196, 118);
   color: white;
   display: inline-block;
@@ -23,15 +25,29 @@
 
 }
 
-.input__area{
+.h2__item{
+  display: inline-block;
+  vertical-align: middle;
+  margin-top: 30px;
+}
+
+.item__textArea{
   font-size: 32px;
   height: 98px;
   width: 687px;
 }
 
-.item__article{
+.item__article1{
   margin-right: 117px;
   height: 89px;
+  background-color: white;
+}
+
+.item__article2{
+  margin-right: 117px;
+  height: 89px;
+  background-color: white;
+  margin-top: 2px;
 }
 
 .item__form{
@@ -43,6 +59,7 @@
 
 .item__section{
   margin-left: 119px;
+  height: auto;
 }
 .main__h1{
 font-family: helvetica;

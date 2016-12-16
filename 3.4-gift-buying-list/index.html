@@ -3,12 +3,13 @@
   <head>
     <!-- [x] Create HTML boilerplate for Gift List.
         [x] Create CSS class for Main element.
-
         [x] Create "Gifts to Buy" heading in Main element. Center and adjust font size.
-
         [x] Create Form element inside of Main. Add placeholder text "type the gift to buy here" inside of Form.
         [x] Create and style "add" (submit) button, and place next to Form.
-        [] Add Section container with 2 smaller articles to represent gift items.
+        [x] Add Section container.
+        [x] Create 1 of 2 articles to represent gift item.
+        [x] Create checklist button for 1st article item.
+        [] Link JS and jQuery
     -->
     <meta charset="utf-8">
     <title>3.4-Holiday Gift List</title>
@@ -21,20 +22,29 @@
         <h1 class="main__h1">GIFTS TO BUY</h1>
       <form action="#"
             class="item__form">
-            <input class="input__area"
+            <input class="item__textArea"
+                   data-js="item__textArea"
                    placeholder="type the gift to buy here...">
-            <input class="form__add__button"
+            <input class="form__addButton"
+                   data-js="form__addButton"
                    type="submit"
                    value="ADD">
 <!-- For some reason when page loads, placeholder text blank... reappears when pressing delete in text area...-->
       </form>
-      <section class="item__section">
-        <article class="item__article">
+      <section class="item__section"
+               data-js="item__section">
+        <article class="item__article1">
           <button class="check__button">
           </button>
-          <h2></h2>
+          <h2 class="h2__item">
+          </h2>
         </article>
-
+        <article class="item__article2">
+          <button class="check__button">
+          </button>
+          <h2 class="h2__item">
+          </h2>
+        </article>
       </section>
     </main>
   </body>
