@@ -38,6 +38,13 @@ $(function(){
         })
       ;
 
+      // add pricing functionality
+      // make price element
+      // add class; CSS
+      // append to articleHTML
+
+
+
       $itemSection.prepend($articleHTML)
       console.log($articleHTML);
   });

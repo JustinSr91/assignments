@@ -29,8 +29,20 @@
 /* This is where added item shows in list */
 .h2__item{
   display: inline-block;
+  font: helvetica;
   vertical-align: middle;
   margin-top: 30px;
+}
+
+.h2__price{
+  display: inline-block;
+  float: right;
+  font: helvetica;
+  font-size: 35px;
+  margin-right: 35px;
+  margin-top: 30px;
+  vertical-align: middle;
+  width: 50px;
 }
 
 .item__article1{
