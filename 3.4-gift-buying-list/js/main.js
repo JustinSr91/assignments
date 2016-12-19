@@ -10,11 +10,11 @@ $(function(){
     e.preventDefault();
 
     var $inputValue = $itemInputArea.val();
-
+    // Used this function to split the gift item and the dollar amount...
     var $inputString = $inputValue.split(",");
     var $price = $inputString[1];
 
-      // Here i am attempting to create a function for comma and dollar value that will input dollar amount into $priceElement...
+      // Here i am attempting to create a function for check button element... did not work...
       $('check__button').click(function(){
           var total = 0;
           $('.check__button:checked').each(function(){
@@ -26,6 +26,7 @@ $(function(){
           $('#total').html('$' + total);
 
         })
+      // Here is element for gift item...
       var $listItemElement = $("<h2>")
         .attr({
           class:"h2__item"
@@ -38,7 +39,7 @@ $(function(){
           class:"check__button"
         })
       ;
-
+      // Whole gift item article with check button, price, and gift item tied in...
       var $articleHTML = $("<article>")
         .append($checkButtonElement)
         .append($listItemElement)
@@ -47,10 +48,7 @@ $(function(){
           class:"item__article2"
         })
       ;
-      // add pricing functionality
-      // make price element
-      // add class; CSS
-      // append to articleHTML
+
       var $priceElement = $("<h2>")
         .attr({
           class:"h2__price"
