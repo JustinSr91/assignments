@@ -10,10 +10,24 @@
 
 /* Album Thumbnails */
 .img{
+  height: 300px;
+  width: 300px;
+
+}
+
+/* Image div */
+.img__container{
+
 
 }
 
 /* Thumbnail title (name) */
 .img__name{
 
+}
+
+.thumb__group{
+  display: flex;
+  margin-left: 170px;
+  text-align: center;
 }
