@@ -1,0 +1,19 @@
+/* Album Title */
+.album__heading{
+  background-color: gray;
+  height: 50px;
+  margin: 0;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  text-align: center;
+}
+
+/* Album Thumbnails */
+.img{
+
+}
+
+/* Thumbnail title (name) */
+.img__name{
+
+}
