@@ -17,8 +17,7 @@
 
 /* Image div */
 .img__container{
-
-
+  padding-right: 10px;
 }
 
 /* Thumbnail title (name) */
@@ -26,7 +25,13 @@
 
 }
 
-.thumb__group{
+.thumb__group1{
+  display: flex;
+  margin: 30px 0 0 170px;
+  text-align: center;
+}
+
+.thumb__group2{
   display: flex;
   margin-left: 170px;
   text-align: center;
