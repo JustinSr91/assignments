@@ -1,3 +1,12 @@
+.album__button{
+  background-color: white;
+  border-style: double;
+  height: 40px;
+  margin-left: 5px;
+  margin-top: 150px;
+  width: 95%;
+}
+
 /* Album Title */
 .album__heading{
   background-color: gray;
@@ -9,8 +18,10 @@
 }
 
 .album__heading2{
+  float: right;
   height: 50px;
   margin: 0;
+  margin-right: 500px;
   padding-top: 25px;
   padding-bottom: 25px;
   text-align: center;
@@ -30,6 +41,13 @@
 /* Thumbnail title (name) */
 .img__name{
 
+}
+
+.side__bar{
+  background-color: gray;
+  float: left;
+  height: 800px;
+  width: 200px;
 }
 
 .thumb__group1{
