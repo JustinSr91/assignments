@@ -3,6 +3,15 @@
   border-style: double;
   height: 40px;
   margin-left: 5px;
+  margin-top: 20px;
+  width: 95%;
+}
+
+.album__button1{
+  background-color: white;
+  border-style: double;
+  height: 40px;
+  margin-left: 5px;
   margin-top: 150px;
   width: 95%;
 }
