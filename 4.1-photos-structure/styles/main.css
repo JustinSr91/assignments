@@ -1,3 +1,5 @@
+
+/* All other Album list buttons */
 .album__button{
   background-color: white;
   border-style: double;
@@ -8,6 +10,7 @@
   width: 95%;
 }
 
+/* 1st Album list button */
 .album__button1{
   background-color: white;
   border-style: double;
@@ -39,6 +42,18 @@
   text-align: center;
 }
 
+.backbutton{
+  background-color: white;
+  border-radius: 10px;
+  height: 30px;
+  width: 200px;
+}
+
+.body{
+  background-color: gray;
+
+}
+
 /* Album Thumbnails */
 .img{
   height: 300px;
@@ -60,6 +75,29 @@
 
 }
 
+.photoarticle__large{
+
+
+}
+
+.phototext__large{
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.photo__large{
+  display: block;
+  height: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 500px;
+}
+
+.photosingle__p{
+
+
+}
+
 /* Album list side bar */
 .side__bar{
   background-color: gray;
@@ -67,6 +105,8 @@
   height: 800px;
   width: 200px;
 }
+
+
 
 /* Home page thumbs (first row) */
 .thumb__group1{
