@@ -1,4 +1,3 @@
-
 /* All other Album list buttons */
 .album__button{
   background-color: white;
@@ -83,6 +82,10 @@
 
 }
 
+.main__close{
+  display: none;
+}
+
 .main__show{
 
 
@@ -93,18 +96,33 @@
 
 }
 
-.main__close{
+.modal__close__bear{
   display: none;
-
 }
 
-.modal__close{
+.modal__close__deer{
+  display: none;
+}
+
+.modal__close__dog{
+  display: none;
+}
+
+.modal__close__duck{
+  display: none;
+}
+
+.modal__close__fish{
+  display: none;
+}
+
+.modal__close__horse{
   display: none;
 }
 
 .modal__img{
   background-color: gray;
-  
+
 
 }
 
