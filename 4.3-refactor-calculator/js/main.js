@@ -1,3 +1,5 @@
+var refactor = require("./refactor")
+
 // [] Will use JS to create event actions when each button in calculator is clicked
 // [] 1. Create eventListener to allow calc to function once HTML loads.
 
@@ -7,12 +9,12 @@ document.addEventListener("DOMContentLoaded", function(){
 // QUERY SELECTOR PULLS ELEMENTS OVER FROM HTML AND INSERTS INTO JS FUNCTION.
 // WILL EVENTUALLY TRY QUERY SELECTOR 'ALL' AND CREATE FOR-LOOP FOR NUMBER KEYS.
 
-  var numberKeyElementEqual = document.querySelector("[data-js='numberKeyEqual']");
-  var outputKeyElement = document.querySelector("[data-js='numberKeyEqual']");
-  numberKeyElementEqual.addEventListener("click", function(){
-  var answerOutput = eval(outputKeyElement.textContent);
-    outputKeyElement.textContent = answerOutput;
-  });
+  // var numberKeyElementEqual = document.querySelector("[data-js='numberKeyEqual']");
+  // var outputKeyElement = document.querySelector("[data-js='numberKeyEqual']");
+  // numberKeyElementEqual.addEventListener("click", function(){
+  // var answerOutput = eval(outputKeyElement.textContent);
+  //   outputKeyElement.textContent = answerOutput;
+  // });
 
   var numberKeyElementClear = document.querySelector("[data-js='numberKeyClear']");
   var outputKeyElement = document.querySelector("[data-js='output__Window']");
