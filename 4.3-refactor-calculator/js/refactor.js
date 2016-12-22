@@ -1,7 +1,7 @@
 
 // [x] Create event listener in JQ
-// [] Find elements in JQ ($body.find)
-// [] Refactor equal button
+// [x] Find elements in JQ ($body.find)
+// [x] Refactor equal button
 
 var $ = require("jquery");
 
@@ -13,8 +13,11 @@ $(function(){
   // var $outputKeyElement = $body.find("[data-js='numberKeyEqual']");
   var $outputWindowElement = $body.find("[data-js='output__Window']");
 
+  // Here I am calling Equal button when clicked...
   $numberKeyElementEqual.on("click", function(e){
+    // This is giving Equal button its functionality
     var answerOutput = eval($outputWindowElement.html());
+    // Linking output window and output with HTML...
     $outputWindowElement.html(answerOutput);
   })
 
