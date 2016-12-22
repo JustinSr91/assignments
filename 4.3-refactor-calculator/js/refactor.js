@@ -1,3 +1,4 @@
+
 // [x] Create event listener in JQ
 // [] Find elements in JQ ($body.find)
 // [] Refactor equal button
@@ -22,3 +23,15 @@ $(function(){
 
 
 })
+
+// THE CODE BELOW IS TRIAL AND ERROR FOR ALL CALC NUMBERS. PLACED ALL NUMBERS INTO ONE DATA-JS GROUP AND RAN THE CODE BELOW. COULD NOT GET THE CODE TO SHOW EXACT NUMBER CLICKED IN OUTPUT WINDOW. INSTEAD, TOTAL GROUP OF NUMBERS INSIDE DATA-JS GROUPING SHOWS IN WINDOW. CODE ABOVE WORKS FOR ALL NUMBERS AS THEY ARE PRESSED.
+
+  // $numberKeyElement.on("click", function(e){
+  //   var $clickedNumberString = $(this);
+  //   var outputString = $outputWindowElement.text();
+  //   var numberClicked = $numberKeyElement.text();
+  //   $outputWindowElement.text(outputString + numberClicked);
+  //   console.log($numberKeyElement.text());
+  //   // $outputWindowElement.html(answerOutput);
+  //
+  // })

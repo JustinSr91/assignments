@@ -5,9 +5,9 @@ var refactor = require("./refactor")
 
 document.addEventListener("DOMContentLoaded", function(){
 
-// CREATING VARIABLES FOR ALL CALCULATOR NUMBER KEY ELEMENTS/CLASSES IN HTML.
-// QUERY SELECTOR PULLS ELEMENTS OVER FROM HTML AND INSERTS INTO JS FUNCTION.
-// WILL EVENTUALLY TRY QUERY SELECTOR 'ALL' AND CREATE FOR-LOOP FOR NUMBER KEYS.
+CREATING VARIABLES FOR ALL CALCULATOR NUMBER KEY ELEMENTS/CLASSES IN HTML.
+QUERY SELECTOR PULLS ELEMENTS OVER FROM HTML AND INSERTS INTO JS FUNCTION.
+WILL EVENTUALLY TRY QUERY SELECTOR 'ALL' AND CREATE FOR-LOOP FOR NUMBER KEYS.
 
   // var numberKeyElementEqual = document.querySelector("[data-js='numberKeyEqual']");
   // var outputKeyElement = document.querySelector("[data-js='numberKeyEqual']");
@@ -120,6 +120,6 @@ document.addEventListener("DOMContentLoaded", function(){
   // numberKeyElement8.addEventListener("click", function(){
   //   outputKeyElement.textContent += 8;
 
-  // });
+  });
 
 });
