@@ -1,6 +1,6 @@
 /*  Fix 10 CSS Items for Assignment
   [x] Resizing of Up Next Images
-  [] Aligning of Up Next Video details
+  [x] Aligning of Up Next Video details
   [] Add "Subscribe count" input next to subscribe button
   [] Create "Add To" and "Share" section
   [] Create video details section with "Show More" area
@@ -121,7 +121,7 @@ main {
   font-size: 9px;
 }
 
-.up__next__img__1 {
+.up__next__img {
   display: inline-block;
   width: 175px;
 }
