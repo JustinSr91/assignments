@@ -1,6 +1,9 @@
 /*  Fix 10 CSS Items for Assignment
   [x] Resizing of Up Next Images
   [x] Aligning of Up Next Video details
+  [x] Add class to all Aside <p> elements
+  [x] Vertical align all Aside <p> elements
+  [x] Change Aside user name and views font color to gray and shrink font size
   [] Add "Subscribe count" input next to subscribe button
   [] Create "Add To" and "Share" section
   [] Create video details section with "Show More" area
@@ -12,10 +15,23 @@
 }
 
 .aside__img{
-  width: 175px;
   height: 95px;
+  width: 175px;
 }
 
+.aside__user{
+  color: gray;
+  font-size: smaller;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.aside__views{
+  color: grey;
+  font-size: smaller;
+  margin-bottom: 0;
+  margin-top: 5px;
+}
 .aside__up__next {
   background-color: white;
   display: inline-block;
@@ -32,9 +48,9 @@
 /* I do not understand how to get rid of right side margin in main */
 main {
   background-color: rgb(241, 241, 241);
+  display: inline-block;
   margin-left: 125px;
   width: 678px;
-  display: inline-block;
 }
 
 .cat__hat__section {
@@ -44,6 +60,7 @@ main {
 .details__div{
   display: inline-block;
   margin: 0;
+  vertical-align: top;
   width: 150px;
 }
 
@@ -56,11 +73,12 @@ main {
 }
 
 .h3__details{
-  font: inherit;
-  width: 182px;
   display: inline-block;
-  vertical-align: top;
+  font: inherit;
   margin-bottom: 0;
+  margin-top: 0;
+  vertical-align: top;
+  width: 182px;
 }
 
 .img__video {
@@ -104,8 +122,8 @@ main {
 }
 
 .search__submit {
-  border: 5px;
   background-color: rgb(249,249,249);
+  border: 5px;
   border-color: rgb(225, 225, 225);
   padding: 3px;
   width: 52px;
@@ -121,9 +139,20 @@ main {
   font-size: 9px;
 }
 
+.up__next__h2{
+  display: table;
+  font-size: medium;
+  margin-bottom: 0;
+  margin-right: 0;
+  width: 55px;
+
+}
+
 .up__next__img {
   display: inline-block;
   width: 175px;
+  margin-bottom: 5px;
+  margin-top: 5px;
 }
 
 .user__group__top {
@@ -176,7 +205,7 @@ main {
   display: inline-block;
   float:right;
   font-size: large;
-  margin-top: 0;
   margin-bottom: 0;
   margin-right: 10px;
+  margin-top: 0;
 }
