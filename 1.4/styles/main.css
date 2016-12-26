@@ -1,5 +1,23 @@
+/*  Fix 10 CSS Items for Assignment
+
+[] Resizing of Up Next Images
+[] Aligning of Up Next Video details
+[] Add
+
+
+
+ */
+
+
+
+
 * {
   box-sizing: border-box;
+}
+
+.aside__img{
+  width: 175px;
+  height: 95px;
 }
 
 .aside__up__next {
@@ -33,6 +51,14 @@ main {
 
 .div__subscribe {
   display: inline-block;
+}
+
+.h3__details{
+  font: inherit;
+  width: 182px;
+  display: inline-block;
+  vertical-align: top;
+  margin-bottom: 0;
 }
 
 .img__video {
@@ -94,8 +120,8 @@ main {
 }
 
 .up__next__img__1 {
-  width: 40%;
-
+  display: inline-block;
+  width: 175px;
 }
 
 .user__group__top {
