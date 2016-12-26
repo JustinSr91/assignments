@@ -5,8 +5,9 @@
   [x] Vertical align all Aside <p> elements
   [x] Change Aside user name and views font color to gray and shrink font size
   [x] Embed "The Pill Scene" video
-  [x] Adjust size and margin of Aside 
-  [] Add "Subscribe count" input next to subscribe button
+  [x] Adjust size and margin of Aside
+  [x] Add "Subscribe count" input next to subscribe button
+  [x] Adjust margin in video section
   [] Create "Add To" and "Share" section
   [] Create video details section with "Show More" area
   [] Create Comments section underneath "Show More".
@@ -16,6 +17,16 @@
   box-sizing: border-box;
 }
 
+.aside__element {
+  background-color: white;
+  display: inline-block;
+  float: right;
+  margin-left: 5px;
+  margin-top: 10px;
+  width: 350px;
+  margin-right: 120px;
+}
+
 .aside__img{
   height: 95px;
   width: 175px;
@@ -23,46 +34,38 @@
 
 .aside__user{
   color: gray;
-  font-size: smaller;
+  font-size: 10px;
   margin-top: 5px;
   margin-bottom: 5px;
+  padding-left: 6px;
 }
 
 .aside__views{
   color: grey;
-  font-size: smaller;
+  font-size: 10px;
   margin-bottom: 0;
   margin-top: 5px;
-}
-
-.aside__up__next {
-  background-color: white;
-  display: inline-block;
-  float: right;
-  margin-left: 5px;
-  margin-top: 18px;
-  width: 350px;
-  margin-right: 120px;
-}
-
-* {
-  box-sizing: border-box;
+  padding-left: 6px;
 }
 
 .full__body{
   background-color: rgb(241, 241, 241);
   margin: 0;
 }
-/* I do not understand how to get rid of right side margin in main */
-main {
+
+.main {
   background-color: rgb(241, 241, 241);
   display: inline-block;
   margin-left: 125px;
+  margin-top: 10px;
   width: 678px;
 }
 
-.cat__hat__section {
-  vertical-align: top;
+.cat__hat__div{
+  margin-left: 10px;
+  margin-top: 5px;
+  width: 40px;
+  display: inline-flex;
 }
 
 .details__div{
@@ -72,19 +75,13 @@ main {
   width: 150px;
 }
 
-.div__cat__hat {
-  display: inline-block;
-}
-
-.div__subscribe {
-  display: inline-block;
-}
-
 .h3__details{
   display: inline-block;
-  font: inherit;
+  font: bold;
+  font-size: 13px;
   margin-bottom: 0;
   margin-top: 0;
+  padding-left: 6px;
   vertical-align: top;
   width: 182px;
 }
@@ -139,6 +136,22 @@ main {
   width: 460px;
 }
 
+.subscribe__div{
+  width: 150px;
+  display: inline-table;
+
+}
+
+.subscribe__group{
+  display: inline-flex;
+  width: 100px;
+
+}
+
+.subscription__count{
+  width: 30px;
+}
+
 .button__upload {
   background-color: rgb(248, 248, 248);
   display: inline-block;
@@ -167,8 +180,9 @@ main {
 }
 
 .username__freestyler {
-  display: block;
-  margin: 0;
+  width: 180px;
+  display: inline;
+
 }
 
 .video {
@@ -185,8 +199,12 @@ main {
 }
 
 .video__movie__title {
+  display: table;
   font-size: medium;
-  margin: 0;
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-bottom: 0;
+  width: 250px;
 }
 
 .video__section {
@@ -199,7 +217,7 @@ main {
   width: 678px;
 }
 
-.video__subscribe {
+.video__subscribe__button {
   background-color:red;
   color: white;
 }
@@ -218,6 +236,6 @@ main {
   float:right;
   font-size: large;
   margin-bottom: 0;
-  margin-right: 10px;
+  margin-right: 15px;
   margin-top: 0;
 }

@@ -16,13 +16,13 @@
           <a href="#"
              class="nav__link">
           <img src="assets/YouTube.png"
-          alt="logo__youtube"
-          class="logo__youtube"/>
+               alt="logo__youtube"
+               class="logo__youtube"/>
           </a>
 
           <form class="search__form"
-                   action="#/search"
-                   method="get"/>
+                action="#/search"
+                method="get"/>
             <input class="search__text"
                    type="text"/>
                 <i class="fa fa-search">
@@ -31,7 +31,7 @@
 
           <div class="user__group__top">
             <button class="button__upload">
-                Upload
+                    Upload
             </button>
             <a href="#">
             <img
@@ -42,42 +42,53 @@
           </div>
       </nav>
 
-      <main>
-            <img class="img__video">
+      <main class="main">
             <iframe width="560"
                     height="315"
                     class="video"
-                    src="https://www.youtube.com/embed/zQ1_IbFFbz"frameborder="0" allowfullscreen></iframe>
+                    src="https://www.youtube.com/embed/zQ1_IbFFbz"frameborder="0"
+                    allowfullscreen>
+            </iframe>
+
         <section class="video__section">
             <h1 class="video__movie__title">
-              The Matrix (1999)- The Pill scene
+                The Matrix (1999)- The Pill scene
             </h1>
-            <div>
-                   <a href="#">
+
+              <div class="cat__hat__div">
+                 <a href="#">
                  <img src="assets/user.jpg"
                       alt="upload profile image"
                       class="video__cat__photo"/>
+                 </a>
+              </div>
+
+
+              <div class="subscribe__div">
+                <p class="username__freestyler">
+                   Freestyler 365
+                </p>
+                <div class="subscribe__group">
+                  <a href="#">
+                     <button class="video__subscribe__button">
+                             Subscribe
+                     </button>
                   </a>
-                <!-- I do not understand how to get username to sit on top of subscribe button -->
-                <div class="video__username__aside">
-                  <p class="username__freestyler">
-                      Freestyler 365
-                  </p>
-                   <a href="#">
-                     <button class="video__subscribe">
-                      Subscribe
-                    </button>
-                     <h2 class="video__views__count">
-                      364,420 views
-                     </h2>
-                   </a>
-                 </div>
-                </article>
-            </div>
+                  <input class="subscription__count"
+                         placeholder="604"
+                         type="text">
+                </div>
+              </div>
+
+              <div class="view__div">
+                <p class="video__views__count">
+                   364,420 views
+                </p>
+              </div>
          </section>
        </main>
-          <!-- Had trouble getting aside section to the top right of page after floating-right -->
-          <aside class="aside__up__next">
+
+          <aside class="aside__element">
               <h2 class="up__next__h2">
                 Up next
               </h2>
@@ -90,10 +101,10 @@
                   The.Matrix-1999 (welcome to the real world)
               </h3>
               <p class="aside__user">
-              dimopan
+                 dimopan
               </p>
               <p class="aside__views">
-              463,371 views
+                 463,371 views
               </p>
             </div>
               <p class="up__next__img"> <!-- Second video -->
@@ -105,10 +116,10 @@
                   "The Matrix" (1999) -- 'Construct' Scenes
               </h3>
               <p class="aside__user">
-                Galactic Archive
+                 Galactic Archive
               </p>
               <p class="aside__views">
-                708,357 views
+                 708,357 views
               </p>
            </div>
               <p class="up__next__img"> <!-- Third video -->
@@ -120,10 +131,10 @@
                   Morpheus explains what is the matrix
               </h3>
               <p class="aside__user">
-                  Jason Newsted
+                 Jason Newsted
               </p>
               <p class="aside__views">
-                  584,308 views
+                 584,308 views
               </p>
            </div>
               <p class="up__next__img"> <!-- Fourth video -->
@@ -135,9 +146,9 @@
                   Film Theory: Neo ISN'T The One in The Matrix Trilogy
               </h3>
               <p class="aside__user">
-                  The Film Theorists
+                 The Film Theorists
               <p class="aside__views">
-                  4,992,777 views
+                 4,992,777 views
               </p>
           </div>
         </aside>
