@@ -4,6 +4,8 @@
   [x] Add class to all Aside <p> elements
   [x] Vertical align all Aside <p> elements
   [x] Change Aside user name and views font color to gray and shrink font size
+  [x] Embed "The Pill Scene" video
+  [x] Adjust size and margin of Aside 
   [] Add "Subscribe count" input next to subscribe button
   [] Create "Add To" and "Share" section
   [] Create video details section with "Show More" area
@@ -32,13 +34,19 @@
   margin-bottom: 0;
   margin-top: 5px;
 }
+
 .aside__up__next {
   background-color: white;
   display: inline-block;
   float: right;
   margin-left: 5px;
-  margin-top: 8px;
-  width: 330px;
+  margin-top: 18px;
+  width: 350px;
+  margin-right: 120px;
+}
+
+* {
+  box-sizing: border-box;
 }
 
 .full__body{
@@ -81,12 +89,6 @@ main {
   width: 182px;
 }
 
-.img__video {
-  display: inline-block;
-  height: 385px;
-  width: 678px;
-}
-
 .logo__youtube {
   display:inline-block;
   margin-top: -9px;
@@ -97,6 +99,10 @@ main {
   background-color: white;
   height: 40px;
   padding: 9px 20px;
+}
+
+.nav__link{
+  display: inline-block;
 }
 
 .img__profile {
@@ -163,6 +169,12 @@ main {
 .username__freestyler {
   display: block;
   margin: 0;
+}
+
+.video {
+  display: inline-block;
+  height: 385px;
+  width: 678px;
 }
 
 .video__cat__photo {
