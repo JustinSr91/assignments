@@ -1,15 +1,11 @@
 /*  Fix 10 CSS Items for Assignment
-
-[] Resizing of Up Next Images
-[] Aligning of Up Next Video details
-[] Add
-
-
-
+  [x] Resizing of Up Next Images
+  [] Aligning of Up Next Video details
+  [] Add "Subscribe count" input next to subscribe button
+  [] Create "Add To" and "Share" section
+  [] Create video details section with "Show More" area
+  [] Create Comments section underneath "Show More".
  */
-
-
-
 
 * {
   box-sizing: border-box;
@@ -43,6 +39,12 @@ main {
 
 .cat__hat__section {
   vertical-align: top;
+}
+
+.details__div{
+  display: inline-block;
+  margin: 0;
+  width: 150px;
 }
 
 .div__cat__hat {
