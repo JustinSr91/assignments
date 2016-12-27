@@ -8,8 +8,8 @@
   [x] Adjust size and margin of Aside
   [x] Add "Subscribe count" input next to subscribe button
   [x] Adjust margin in video section
-  [x] Create "Add To" and "Share" elements in a div
-  [] Style "Add To" and "Share" elements
+  [x] Create sub elements in a div beneath video section
+  [x] Style sub elements
   [] Create video details section with "Show More" area
   [] Create Comments section underneath "Show More".
  */
@@ -22,6 +22,7 @@
   background-color: white;
   display: inline-block;
   float: right;
+  height: 700px;
   margin-left: 5px;
   margin-right: 120px;
   margin-top: 10px;
@@ -62,6 +63,18 @@
   width: 40px;
 }
 
+.description {
+  font-size: 12px;
+  margin-top: 0;
+}
+
+.description__heading {
+  font-size: 13px;
+  margin-bottom: 4px;
+  margin-top: 10px;
+  padding-top: 10px;
+}
+
 .details__div {
   display: inline-block;
   margin: 0;
@@ -70,14 +83,31 @@
 }
 
 .element__add__to {
+  color: rgb(85, 85, 85);
+  font-size: 12px;
   margin-right: 15px;
 }
 
-.element__more {
+.element__dislikes {
+  color: rgb(85, 85, 85);
+  font-size: 12px;
+}
 
+.element__likes {
+  color: rgb(85, 85, 85);
+  margin-right: 15px;
+  font-size: 12px;
+}
+
+.element__more {
+  color: rgb(85, 85, 85);
+  font-size: 12px;
+  margin-right: 450px;
 }
 
 .element__share {
+  color: rgb(85, 85, 85);
+  font-size: 12px;
   margin-right: 15px;
 }
 
@@ -224,6 +254,14 @@
   height: 40px;
   vertical-align: top;
   width: 40px;
+}
+
+.video__description {
+  background-color: white;
+  height: 130px;
+  margin-top: 25px;
+  width: 678px;
+  padding-left: 10px;
 }
 
 .video__movie__title {
