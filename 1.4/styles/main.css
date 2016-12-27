@@ -10,7 +10,7 @@
   [x] Adjust margin in video section
   [x] Create sub elements in a div beneath video section
   [x] Style sub elements
-  [] Create video details section with "Show More" area
+  [x] Create video details section with "Show More" area
   [] Create Comments section underneath "Show More".
  */
 
@@ -195,16 +195,29 @@
   width: 460px;
 }
 
-.subscribe__div {
-  width: 150px;
-  display: inline-table;
+.show__more__div {
+  background-color: white;
+  height: 20px;
+  padding-top: 4px;
+  width: 678px;
+}
 
+.show__more__text {
+  color: rgb(85, 85, 85);
+  font-size: 11px;
+  font-weight: 600px;
+  margin: 0;
+  text-align: center;
+}
+
+.subscribe__div {
+  display: inline-table;
+  width: 150px;
 }
 
 .subscribe__group {
   display: inline-flex;
   width: 100px;
-
 }
 
 .subscription__count {
@@ -258,7 +271,9 @@
 
 .video__description {
   background-color: white;
-  height: 130px;
+  border-bottom-style: groove;
+  border-bottom-width: thin;
+  height: 90px;
   margin-top: 25px;
   width: 678px;
   padding-left: 10px;
