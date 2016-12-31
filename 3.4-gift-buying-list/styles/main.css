@@ -2,29 +2,8 @@
   box-sizing: border-box;
 }
 
-/* Checklist button. Once checked, item line-through takes place */
-.check__button{
-  background-color: white;
-  border-color: rgb(238, 238, 238);
-  border-radius: 50px;
-  border-style: double;
-  height: 50px;
-  vertical-align: middle;
-  width: 50px;
-  margin-top: 10px;
-}
-
-.dollar__amount{
-  display: inline-block;
-  float: right;
-}
-
-.dollar__sign{
-  display: inline-block;
-}
-
 /* The "add" button */
-.form__addButton{
+.addButton {
   background-color: rgb(125, 196, 118);
   color: white;
   display: inline-block;
@@ -35,8 +14,33 @@
   width: 139px;
 }
 
+.body {
+
+}
+
+/* Checklist button. Once checked, item line-through takes place */
+.check__button {
+  background-color: white;
+  border-color: rgb(238, 238, 238);
+  border-radius: 50px;
+  border-style: double;
+  height: 50px;
+  vertical-align: middle;
+  width: 50px;
+  margin-top: 10px;
+}
+
+.dollar__amount {
+  display: inline-block;
+  float: right;
+}
+
+.dollar__sign {
+  display: inline-block;
+}
+
 /* This is where added item shows in list */
-.h2__item{
+.h2__item {
   display: inline-block;
   font: helvetica;
   vertical-align: middle;
@@ -44,54 +48,69 @@
 }
 
 /* The shows price of gift item */
-.h2__price{
-  display: inline-block;
-  float: right;
+.h2__price {
+  display: inline-flex;
   font: helvetica;
   font-size: 35px;
-  margin-right: 35px;
-  margin-top: 30px;
+  margin: 30px 35px 0 430px;
   vertical-align: middle;
   width: 50px;
 }
 
-/* Where items show in list form */
-.item__article1{
-  margin-right: 117px;
-  height: 89px;
-  background-color: white;
-}
-
-.item__article2{
+.item__article2 {
   margin-right: 117px;
   height: 89px;
   background-color: white;
   margin-top: 2px;
 }
 
+.item__delete {
+  text-decoration: line-through;
+  vertical-align: middle;
+  color: green;
+}
+
 /* Item input area */
-.item__form{
+.item__form {
   margin: 0 auto;
   height: 98px;
   width: 687px;
   display: flex;
 }
 
-/* Container where list of items show up */
-.item__section{
-  margin-left: 119px;
-  height: auto;
-}
-
 /* Here is the text field where item name is entered */
-.item__textArea{
+.item__textArea {
   font-size: 32px;
   height: 98px;
   width: 687px;
 }
 
+.lineThrough {
+  color: red;
+  display: inline-block;
+  font-style: italic;
+  margin-bottom: 0px;
+  /*margin-left: 20px;
+  margin-top: 10px;
+  vertical-align: top;*/
+  text-decoration: line-through;
+}
+
+/* Where items show in list form */
+.list__article1 {
+  margin-right: 117px;
+  height: 89px;
+  background-color: white;
+}
+
+/* Container where list of items show up */
+.list__section {
+  margin-left: 119px;
+  height: auto;
+}
+
 /* Page heading */
-.main__h1{
+.main__h1 {
 font-family: helvetica;
 font-size: 48px;
 font-weight: lighter;
@@ -100,7 +119,7 @@ width: 100%;
 }
 
 /* Main container */
-.main{
+.main {
   background-color: rgb(245,245,245);
   border-bottom: rgb(245, 245, 245);
   border-bottom-style: double;
@@ -109,10 +128,11 @@ width: 100%;
   width: 922px;
 }
 
-.totalPrice__article{
+.totalPrice__article {
   margin-right: 117px;
 }
 
-.total__Text{
+.total__Text {
   display: inline-block;
+  margin-left: 600px;
 }

@@ -19,33 +19,32 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="js/main.js"></script>
   </head>
-  <body>
+  <body class="body">
     <main class="main">
         <h1 class="main__h1">GIFTS TO BUY</h1>
-      <form action="#"
-            class="item__form">
+        <form action="index.html"
+              class="item__form"
+              method="post">
             <input class="item__textArea"
-                   data-js="item__textArea"
-                   placeholder="type the gift to buy here...">
-            <input class="form__addButton"
-                   data-js="form__addButton"
+                   data-js="textArea"
+                   placeholder="type the gift to buy here, price">
+            <input class="addButton"
+                   data-js="addButton"
+                   name="addItemToList"
                    type="submit"
                    value="ADD">
-
-      </form>
-      <section class="item__section"
-               data-js="item__section">
-        <article class="item__article1"
-                 data-js="item__article">
-          <button class="check__button"
-                  data-js="checkButton">
+        </form>
+      <section class="list__section"
+               data-js="listSection">
+        <article data-js="listArticle">
+          <button data-js="checkButton">
           </button>
           <h2 class="h2__item"
               data-js="giftItem">
           </h2>
           <h2 class="h2__price"
-              data-js="price">
-              $25
+              data-js="priceArea">
+
           </h2>
         </article>
         <article class="totalPrice__article"
@@ -56,7 +55,8 @@
           <h3 class="dollar__sign">
             $
           </h3>
-          <h3 class="dollar__amount">
+          <h3 class="dollar__amount"
+              data-js="totalAmount">
             0
           </h3>
         </article>

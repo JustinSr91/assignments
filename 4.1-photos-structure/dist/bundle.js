@@ -44,7 +44,7 @@
 /* 0 */
 /***/ function(module, exports) {
 
-	// var $ = require("jquery");
+	var $ = require("jquery");
 
 	$(function(){
 
