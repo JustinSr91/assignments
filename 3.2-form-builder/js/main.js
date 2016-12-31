@@ -28,10 +28,10 @@ document.addEventListener("DOMContentLoaded", function(){
     if (inputData.type === "select"){
       inputPlaceholderString += `<select>`;
 
-      // There is an error in this for each loop... I cannot figure out what is giving me the error or how to correct it... I am trying to make second loop so my if-else statement will store. I need help with this loop.
-        inputData.select.forEach(function(selectData){
-          inputPlaceholderString += `<select label="${selectData.label}" value= "${selectData.value}"</select>`;
+        inputData.options.forEach(function(selectData){
+          inputPlaceholderString += `<option label="${selectData.label}" value= "${selectData.value}"</option>`;
         })
+        inputPlaceholderString += `</select>`;
 
     }else {
       inputPlaceholderString += `<label> ${inputData.label} </label>`;
