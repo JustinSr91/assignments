@@ -41,10 +41,6 @@
   text-align: center;
 }
 
-.remove__album__heading2{
-  display: none;
-}
-
 .backbutton{
   background-color: white;
   border-radius: 10px;
@@ -52,13 +48,13 @@
   width: 200px;
 }
 
-.body{
+.body__albumImage{
   background-color: gray;
 
 }
 
 .body__index{
-
+  background-color: white;
 }
 
 /* Album Thumbnails */
@@ -86,59 +82,18 @@
   display: none;
 }
 
-.main__show{
-
+.main{
 
 }
 
 .modal__div{
 
-
 }
 
-.modal__close__bear{
+.modal__close {
   display: none;
 }
 
-.modal__close__deer{
-  display: none;
-}
-
-.modal__close__dog{
-  display: none;
-}
-
-.modal__close__duck{
-  display: none;
-}
-
-.modal__close__fish{
-  display: none;
-}
-
-.modal__close__horse{
-  display: none;
-}
-
-.modal__img{
-  background-color: gray;
-
-
-}
-
-.modal__show{
-
-}
-
-.modal__text{
-
-
-}
-
-.photoarticle__large{
-
-
-}
 
 .phototext__large{
   margin-bottom: 40px;
@@ -153,9 +108,13 @@
   width: 800px;
 }
 
-.photosingle__p{
+.photolarge__p{
 
 
+}
+
+.remove__album__heading2{
+  display: none;
 }
 
 /* Album list side bar */

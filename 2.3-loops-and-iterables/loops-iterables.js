@@ -5,6 +5,7 @@ function squareDance(numbersArray) {
 
     var currentNumber = numbersArray[i];
     numbersArray[i] = Math.pow(currentNumber, 2);
+    console.log(currentNumber);
   }
 
 return numbersArray;

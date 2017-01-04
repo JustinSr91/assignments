@@ -135,14 +135,16 @@ console.assert(reverse("we don't want no trouble") === "elbuort on tnaw t'nod ew
 
 function findLongestWord(sentence){
   // cannot find answer to this problem, nor do I fully understand how to set up the function. Referenced https://www.youtube.com/watch?v=LeD27i9G9s0; kept getting Unexpected end of input error in console.
-  var words = str.split(" ");
-  var longest = 0;
-  for (var i = 0; i < words.length; i++) {
-      if (words[i].length > longest) {
-        longest = words[i].length;
+  var sentenceArray = sentence.split(" ")
+    // create a variable to hold the length of the longest word
+    var longestWord = "";
+    // create for loop to run code
+    for(var i = 0; i < sentenceArray.length; i++){
+      var currentWord = sentenceArray[i];
+      if (longestWord.length > currentWord.length){
       }
-   }
-}
-
+    }
+      return longestWord;
+  };
 console.assert(findLongestWord("book dogs") === "book")
 console.assert(findLongestWord("don't mess with Texas") === "Texas")

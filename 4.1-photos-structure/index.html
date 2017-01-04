@@ -4,20 +4,20 @@
     <meta charset="utf-8">
     <title></title>
     <link rel="stylesheet" href="styles/main.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js">
-    </script>
-    <script src="js/main.js">
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js">
+    </script> -->
+    <script src="dist/bundle.js">
     </script>
   </head>
   <body class="body__index"
         data-js="body__index">
     <div id="myModal"
-         class="modal__close__fish"
-         data-js="modal__close__fish">
+             class="modal__close"
+             data-js="modal__close">
 
   <!-- Modal content -->
-      <div class="modal__img">
-        <p class="photosingle__p">
+      <div class="modal__div">
+        <p class="photolarge__p">
           <span class="close">
             <button class="backbutton"
                     data-js="backbutton">
@@ -29,14 +29,14 @@
           </h1>
         </p>
         <img class="photo__large"
-             data-js="modal__img"
+             data-js="fishImage"
              src="https://images.unsplash.com/photo-1466354424719-343280fe118b?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&dl=dksk8szlrn0-sora-sagano.jpg&s=c2ec3d3d121bbbf7963fc3a6ac13eb91"
              alt="fish">
       </div>
     </div>
 
     <div id="myModal"
-         class="modal__close__bear"
+         class="modal__close"
          data-js="modal__close__bear">
 
   <!-- Modal content -->
@@ -60,7 +60,7 @@
     </div>
 
     <div id="myModal"
-         class="modal__close__horse"
+         class="modal__close"
          data-js="modal__close__horse">
 
   <!-- Modal content -->
@@ -84,7 +84,7 @@
     </div>
 
     <div id="myModal"
-         class="modal__close__duck"
+         class="modal__close"
          data-js="modal__close__duck">
 
   <!-- Modal content -->
@@ -108,7 +108,7 @@
     </div>
 
     <div id="myModal"
-         class="modal__close__dog"
+         class="modal__close"
          data-js="modal__close__dog">
 
   <!-- Modal content -->
@@ -132,7 +132,7 @@
     </div>
 
     <div id="myModal"
-         class="modal__close__deer"
+         class="modal__close"
          data-js="modal__close__deer">
 
   <!-- Modal content -->
@@ -220,7 +220,8 @@
                  src="https://images.unsplash.com/photo-1466354424719-343280fe118b?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&dl=dksk8szlrn0-sora-sagano.jpg&s=c2ec3d3d121bbbf7963fc3a6ac13eb91"
                  alt="">
           </a>
-          <div class="img__name">
+          <div class="img__name"
+               data-js="fishImage">
             Fish
           </div>
         </div>
