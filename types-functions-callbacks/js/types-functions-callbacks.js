@@ -65,8 +65,8 @@ console.assert(average(100,200) === 150)
  * Modify your sum function so that if either of its
  inputs is not a number, it will return "null."
  */
- function sum(x,y){
-  if (typeof(x)!="number" || typeof(y)!="number"){
+ function sum(a,b){
+  if (typeof(a)!="number" || typeof(b)!="number"){
     return null;
   }
 
