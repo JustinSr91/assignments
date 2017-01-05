@@ -6,6 +6,14 @@
 
 // Write a function called addOne() that returns the input number, plus one.
 
+function addOne(a){
+  var a = 1;
+  var b = a + 1;
+
+  return b;
+
+}
+
 console.assert(addOne(1) === 2)
 
 // Part 0
@@ -14,6 +22,7 @@ console.assert(addOne(1) === 2)
 
 var doubleNum = function(num) {
     var newNum = num * 2
+    return newNum;
 }
 
 console.assert(doubleNum(5) === 10)
@@ -25,7 +34,10 @@ console.assert(doubleNum(5) === 10)
  * Write a function called sum that takes two numbers as
  * inputs and computes the sum of those two numbers.
  */
-
+function sum(a, b) {
+  var c = a + b;
+  return c;
+}
 
 console.assert(sum(8, 11) === 19);
 console.assert(sum(4, 100) === 104);
