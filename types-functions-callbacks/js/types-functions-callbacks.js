@@ -35,6 +35,7 @@ console.assert(doubleNum(5) === 10)
  * inputs and computes the sum of those two numbers.
  */
 function sum(a, b) {
+
   var c = a + b;
   return c;
 }
@@ -49,6 +50,11 @@ console.assert(sum(4, 100) === 104);
 // repeating yourself, use your sum function inside
 // of your average function.
 
+function average(a, b) {
+  sum(a, b);
+  var returnValue = sum(a, b)/2;
+  return returnValue;
+}
 
 console.assert(average(8,12) === 10)
 console.assert(average(100,200) === 150)
@@ -59,6 +65,10 @@ console.assert(average(100,200) === 150)
  * Modify your sum function so that if either of its
  inputs is not a number, it will return "null."
  */
+ function sum(x,y){
+  if (typeof(x)!="number" || typeof(y)!="number"){
+    return null;
+  }
 
 
 console.assert(sum(867, 5309) === 6176);
@@ -71,6 +81,14 @@ console.assert(sum(true, 5) === null);
 // Write a function called isNegative that will tell
 // whether a number is negative or not.
 
+function isNegative(a) {
+  if(a < 0) {
+    return true;
+  }
+ else{
+  return false;
+  }
+}
 console.assert(isNegative(10) === false)
 console.assert(isNegative(0) === false)
 console.assert(isNegative(-999) === true)
