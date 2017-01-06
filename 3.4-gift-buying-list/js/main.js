@@ -38,7 +38,7 @@ $(function(){
         class:"h2__price",
         "data-js": "priceArea"
       })
-      .text("$" + ($priceElement))
+      .text("$" + ($giftPrice))
 
       // Whole gift item article with check button, price, and gift item tied in...
     var $articleHTML = $("<article>")
