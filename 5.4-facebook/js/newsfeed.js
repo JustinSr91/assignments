@@ -6,6 +6,9 @@
   // [x] <h2> post title
   // [x] <h3> date of post
   // [x] <p> text content
+  // [x] <article> comment section
+    // [x] <img> profile img
+    // [] <p> text content
 // [x] Give elements classNames
       // body (body)
       // section element (post__container)
@@ -21,10 +24,18 @@
   // [x] style p element (post__textContent)
 
 
-
 import React from 'react'
 
 export default React.createClass({
+  getInitialState() {
+    return {
+      comments: [
+        {
+          author: ""
+        }
+      ]
+    }
+  },
 
     render() {
       return (
@@ -43,6 +54,10 @@ export default React.createClass({
             <p className="author__textContent1"> Welcome! To see these stories in the Instant Articles format, you must be on the latest version of the Facebook app for iPhone or Android. </p>
             <p className="author__textContent2"> Learn more about this new tool for publishers at <a href="#" className="text__link"> instantarticles.fb.com. </a> </p>
           </section>
+          <article className="comments__article">
+            <img className="commentor__img"
+                 src="https://scontent-atl3-1.xx.fbcdn.net/v/t1.0-1/p200x200/12994577_1037121899695559_8791262156209967742_n.jpg?oh=555403f748c52a73e179697e4a8541ba&oe=5921E08F"></img>
+          </article>
         </main>
       // </body>
       )

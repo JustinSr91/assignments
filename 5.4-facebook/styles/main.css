@@ -6,6 +6,9 @@
 
 .post__container {
   background-color: white;
+  border-color: rgb(208, 209, 213);
+  border-style: solid;
+  border-width: 1px;
   font-family: helvetica;
   height: 165px;
   margin-left: auto;
