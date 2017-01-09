@@ -7,14 +7,30 @@
 }
 
 .post__date {
-
+  color: rgb(150, 150, 150);
+  font-size: 14px;
+  margin: 0;
+  margin-top: 2px;
 }
 
 .post__textContent {
-  
+  margin-top: 10px;
 }
 
+.post__title {
+  display: inline-block;
+  font-size: 18px;
+  vertical-align: top;
+  margin: 0;
+}
+
+.postTitleDate__div {
+  display: inline-block;
+  margin-left: 8px;
+  vertical-align: top;
+}
 .profile__img {
+  border-style: groove;
   height: 41px;
   width: 41px;
 }
