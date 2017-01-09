@@ -1,9 +1,17 @@
 
+.body {
+  background-color: rgb(233, 235, 238);
+  height: 1000px;
+}
+
 .post__container {
+  background-color: white;
+  font-family: helvetica;
+  height: 165px;
   margin-left: auto;
   margin-right: auto;
   margin-top: 105px;
-  width: 500px;
+  width: 505px;
 }
 
 .post__date {
@@ -13,8 +21,16 @@
   margin-top: 2px;
 }
 
-.post__textContent {
-  margin-top: 10px;
+.post__textContent1 {
+  font-size: 15px;
+  margin: 5px 0 0 0;
+  padding: 0 10px 5px 10px;
+}
+
+.post__textContent2 {
+  font-size: 15px;
+  padding: 4px 0 0 10px;
+  margin: 0;
 }
 
 .post__title {
@@ -26,11 +42,16 @@
 
 .postTitleDate__div {
   display: inline-block;
-  margin-left: 8px;
+  margin: 10px 0 0 8px;
   vertical-align: top;
 }
 .profile__img {
   border-style: groove;
   height: 41px;
+  margin: 10px 0 0 10px;
   width: 41px;
+}
+
+.text__link {
+  text-decoration: none;
 }

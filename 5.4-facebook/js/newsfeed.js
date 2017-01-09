@@ -7,6 +7,7 @@
   // [x] <h3> date of post
   // [x] <p> text content
 // [x] Give elements classNames
+      // body (body)
       // section element (post__container)
       // img element (profile__img)
       // h2 element (post__title)
@@ -28,19 +29,22 @@ export default React.createClass({
     render() {
       return (
 
-        <section className="post__container">
-          <img className="profile__img"
-               src="https://scontent-atl3-1.xx.fbcdn.net/v/t1.0-1/p200x200/12994577_1037121899695559_8791262156209967742_n.jpg?oh=555403f748c52a73e179697e4a8541ba&oe=5921E08F"></img>
-          <div className="postTitleDate__div">
-            <a href="#">
-            <h2 className="post__title"> Instant Articles </h2>
-            </a>
-            <h3 className="post__date"> May 13, 2015 </h3>
-          </div>
-          <p className="post__textContent"> Welcome! To see these stories in the Instant Articles format, you must be on the latest version of the Facebook app for iPhone or Android.
-Learn more about this new tool for publishers at instantarticles.fb.com. </p>
-
-        </section>
+      // <body className="body">
+        <main className="main">
+          <section className="post__container">
+            <img className="profile__img"
+                 src="https://scontent-atl3-1.xx.fbcdn.net/v/t1.0-1/p200x200/12994577_1037121899695559_8791262156209967742_n.jpg?oh=555403f748c52a73e179697e4a8541ba&oe=5921E08F"></img>
+            <div className="postTitleDate__div">
+              <a href="#">
+              <h2 className="post__title"> Instant Articles </h2>
+              </a>
+              <h3 className="post__date"> May 13, 2015 </h3>
+            </div>
+            <p className="post__textContent1"> Welcome! To see these stories in the Instant Articles format, you must be on the latest version of the Facebook app for iPhone or Android. </p>
+            <p className="post__textContent2"> Learn more about this new tool for publishers at <a href="#" className="text__link"> instantarticles.fb.com </a> . </p>
+          </section>
+        </main>
+      // </body>
       )
     }
 })
