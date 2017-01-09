@@ -1,6 +1,6 @@
 import React from 'react'
 
-import Render from 'render-dom'
+import { render } from 'react-dom'
 
 import Newsfeed from './newsfeed'
 
