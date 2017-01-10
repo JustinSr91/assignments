@@ -31,9 +31,12 @@ export default React.createClass({
     return {
       comments: [
         {
-          author: ""
-        }
-      ]
+          name: "User",
+          profileImage: "styles/profile__img.jpg",
+          commentDate: "Just Now",
+          comment: "This is a comment",
+          id: 0
+        }],
     }
   },
 
@@ -44,7 +47,7 @@ export default React.createClass({
         <main className="main">
           <section className="post__container">
             <img className="author__img"
-                 src="https://scontent-atl3-1.xx.fbcdn.net/v/t1.0-1/p200x200/12994577_1037121899695559_8791262156209967742_n.jpg?oh=555403f748c52a73e179697e4a8541ba&oe=5921E08F"></img>
+                 src="styles/profile__img.jpg"></img>
             <div className="postTitleDate__div">
               <a href="#">
               <h2 className="author__name"> Instant Articles </h2>
@@ -54,15 +57,20 @@ export default React.createClass({
             <p className="author__textContent1"> Welcome! To see these stories in the Instant Articles format, you must be on the latest version of the Facebook app for iPhone or Android. </p>
             <p className="author__textContent2"> Learn more about this new tool for publishers at <a href="#" className="text__link"> instantarticles.fb.com. </a> </p>
           </section>
-          <article className="comments__article">
-            <div className="comments__div">
-              <img className="commentor__img"
-                   src="https://scontent-atl3-1.xx.fbcdn.net/v/t1.0-1/p200x200/12994577_1037121899695559_8791262156209967742_n.jpg?oh=555403f748c52a73e179697e4a8541ba&oe=5921E08F"></img>
-                 <div className="commentor__div">
-                   <p className="commentor__name"> Commentor Name </p>
-                   <p className="commentor__textContent"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+
+
+          <article className="comments__article"> {this.state.comments.map((comment, i)=>{
+       return <li className="comments__div" key={i}>
+              <img src= {`${comment.profileImage}`}
+                   className='commentor__img'/>
+                 <div className='commentor__div'>
+                   <p className='commentor__name'> {comment.name} </p>
+                   <p className='commentor__textContent'> {comment.comment} </p>
                  </div>
-            </div>
+                 <article className="comment__date"> {comment.commentDate} </article>
+              </li>
+            })
+          }
           </article>
         </main>
       // </body>
