@@ -1,0 +1,14 @@
+* {
+  box-sizing: border-box;
+}
+
+.foghorn {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 800px;
+}
+
+.warningMessage {
+  text-align: center;
+}
