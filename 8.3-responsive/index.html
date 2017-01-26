@@ -1,4 +1,26 @@
 <!DOCTYPE html>
+<!-- Todo List
+[] Header
+  [x] Home
+  [x] Pricing
+  [x] Contact
+  [] styling and alignment of text
+[] Background Image
+  [] Image styling
+[] 1st plan pricing article
+  [x] plan title
+  [x] sub-articles
+  [x] "choose" button
+  [] styling
+[] 2nd plan pricing article
+[] 3rd plan pricing article
+[] Paragraphs
+  [] Get Started
+  [] Pay Monthly or Annually
+  [] 24/7 Support
+  [] Cancel Payment
+[] Footer
+-->
 <html>
   <head>
     <meta charset="utf-8">
@@ -6,6 +28,49 @@
     <link rel="stylesheet" href="styles/main.css">
   </head>
   <body>
-    
+    <header>
+      <li class="header__logo"> Your Logo </li>
+      <li class="header__logo"> Home </li>
+      <li class="header__logo"> Pricing </li>
+      <li class="header__logo"> Contact </li>
+    </header>
+      <section>
+        <img class="background__img"
+             src="comps/49bdc7fc-background0.jpg"
+             alt="background">
+      </section>
+      <section>
+        <article class="pricing__article">
+          <p> PERSONAL </p>
+          <h2> $5 </h2>
+          <p> PER MONTH </p>
+        </article>
+        <article class="plan__details">
+          Free setup
+        </article>
+        <article class="plan__details">
+          Custom sub-domain
+        </article>
+        <article class="plan__details">
+          Standard customer support
+        </article>
+        <article class="plan__details">
+          1GB file storage
+        </article>
+        <article class="plan__details">
+          1 database
+        </article>
+        <article class="plan__details">
+          Unlimited bandwidth
+        </article>
+        <article class="plan__details">
+          <input type="button"
+                 value="Choose"
+                 class="choose__button">
+        </article>
+      </section>
+
+    <footer>
+    </footer>
   </body>
 </html>
