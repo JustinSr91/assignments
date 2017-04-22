@@ -3,7 +3,7 @@
 }
 
 .clearButton {
-  color: red;
+  color: orangered;
 }
 
 .chatAppBody {
@@ -20,7 +20,7 @@
   text-align: center;
 }
 .chatMessagesDisplay {
-  border: solid 1px black;
+  border: solid 1px lightgray;
   width: 500px;
   height: auto;
   min-height: 250px;
@@ -56,6 +56,10 @@
   margin-right: auto;
 }
 
+.title {
+  text-align: center;
+}
+
 .currentPost {
   text-align: center;
   color: orangered;
@@ -64,12 +68,12 @@
 }
 
 .userNameStyle {
-  color: red;
+  color: orangered;
   font-size: 16px;
   font-weight: bold;
 }
 
 .userMessageStyle {
-  color: black;
+  color: darkgreen;
   font-size: 16px;
 }

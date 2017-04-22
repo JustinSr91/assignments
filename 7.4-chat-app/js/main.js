@@ -66,6 +66,7 @@ export default React.createClass({
   render (){
     return (
       <section className="chatAppBody">
+        <h1 className="title"> Chat Window </h1>
         <div className="chatMessagesDisplay">
           {
             this.state.chatJsonData.map((currentPost, i)=>{
@@ -84,7 +85,7 @@ export default React.createClass({
         </div>
         <form className="appForm">
           <input className="userNameInput" type="text" placeholder="User Name" onChange={this.onUserInputChange}/>
-          <input className="messageText" type="text" placeholder="Message Text" onChange={this.onMessageChange}/>
+          <input className="messageText" type="text" placeholder="Start Typing..." onChange={this.onMessageChange}/>
           <input className="submitMessage" type="submit" onClick={this.onSubmitMessage}/>
           <input className="clearButton" type="button" value="clear" onClick={this.onMessagesClear}/>
         </form>
