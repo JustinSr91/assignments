@@ -7,82 +7,88 @@ export default React.createClass({
     ajax({
       url: "https://tiny-tiny.herokuapp.com/collections/justinstrayhorn-chat",
       datatype: "json",
-      success: this.onInitialAjaxLoaded,
-      error: this.onAjaxLoadFail
+      success: this.initialJsonLoaded,
+      error: this.jsonNotLoaded
     })
   },
   getInitialState (){
     return {
-      users: "",
-      messages: "",
-      ajaxData: []
+      userNames: "",
+      chatMessages: "",
+      chatJsonData: []
     }
   },
-  onInitialAjaxLoaded (response){
-    var reversedAjaxArray = response.reverse()
+  initialJsonLoaded (response){
+    var reversedJsonArray = response.reverse()
     this.setState({
-      ajaxData: reversedAjaxArray
+      chatJsonData: reversedJsonArray
     })
   },
-  onPostAjaxLoaded (response){
+  onPostJsonLoaded (response){
     this.setState({
-      ajaxData: this.state.ajaxData.concat(response)
+      chatJsonData: this.state.chatJsonData.concat(response)
     })
   },
-  onAjaxLoadFail (response){
-    // need to enter failure message
+  jsonNotLoaded (response){
+    // need to enter error message here
   },
-  onUserChange (e){
-    this.setState({users:e.target.value})
+  onUserInputChange (e){
+    // this is where the onChange input sets state for userName
+    this.setState({userNames:e.target.value})
   },
   onMessageChange (e){
-    this.setState({messages:e.target.value})
+    // this is where the onChange input sets state for chatMessage
+    this.setState({chatMessages:e.target.value})
   },
-  // This stores data
   onSubmitMessage (e){
-    // Prevent page from refreshing
     e.preventDefault()
-    var currentUser = this.state.users;
-    var currentMessage = this.state.messages;
-    var userDisplay = currentUser + ": ";
+    var currentUser = this.state.userNames;
+    var currentMessage = this.state.chatMessages;
+    var completeUserDisplay = currentUser + ": ";
 
     ajax({
-      url: "https://tiny-tiny.herokuapp.com/collections/justinstrayhorn-chat",
+      url: "https://tiny-tiny.herokuapp.com/collections/davidRangel-chatApp",
       datatype: "json",
       type: "POST",
       data: {
-        currentUser: userDisplay,
+        currentUser: completeUserDisplay,
         currentMessage: currentMessage
       },
-      success: this.onPostAjaxLoaded,
-      error: this.onAjaxLoadFail
+      success: this.onPostJsonLoaded,
+      error: this.jsonNotLoaded
     })
   },
-  // clears chat history from window
   onMessagesClear(e) {
     e.preventDefault()
-    this.setState({ajaxData:[]})
+    this.setState({chatJsonData:[]})
   },
 
   render (){
     return (
-      <section>
-        <h1> Chat Window </h1>
-        <div>
+      <section className="chatAppBody">
+        <div className="chatMessagesDisplay">
           {
-            this.state.ajaxData.map((currentPost, i)=>{
-              return <p key={i}> <span>{currentPost.currentUser}</span> <span>{currentPost.currentMessage}</span></p>
+            this.state.chatJsonData.map((currentPost, i)=>{
+              return (
+                <div key={i} className="currentPost" id={currentPost._id}>
+                  <span className="userNameStyle">
+                    {currentPost.currentUser}
+                  </span>
+                  <span className="userMessageStyle">
+                    {currentPost.currentMessage}
+                  </span>
+                </div>
+              )
             })
           }
         </div>
-        <form>
-          <input type="text" placeholder="User Name" onChange={this.onUserChange}/>
-          <input type="text" placeholder="Type Your Message" onChange={this.onMessageChange}/>
-          <input type="submit" onClick={this.onSubmitMessage}/>
-          <input type="button" value="clear" onClick={this.onMessagesClear}/>
+        <form className="appForm">
+          <input className="userNameInput" type="text" placeholder="User Name" onChange={this.onUserInputChange}/>
+          <input className="messageText" type="text" placeholder="Message Text" onChange={this.onMessageChange}/>
+          <input className="submitMessage" type="submit" onClick={this.onSubmitMessage}/>
+          <input className="clearButton" type="button" value="clear" onClick={this.onMessagesClear}/>
         </form>
       </section>
     )
   }
-
 })
